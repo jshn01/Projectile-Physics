@@ -40,7 +40,6 @@ while running:
                   angle -= 1
         if event.type == pygame.KEYUP:
              if event.key == pygame.K_r:
-                  print(ball.vel)
                   ball.thrown = False
                   ball.placed = False
                   retry = True

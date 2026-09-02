@@ -5,4 +5,4 @@ MASS = 0.2
 AIRDENSITY = 1
 DRAGCOEFFICIENT = 0.1
 BOUNCINESS = 0.75 # Between 0 and 1
-friction = 0.99
+FRICTION = 0.99
