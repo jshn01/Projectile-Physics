@@ -1,6 +1,6 @@
 import pygame
 from settings import pixelsPerMetre as px
-from settings import GRAVITY, friction, AIRDENSITY, DRAGCOEFFICIENT, MASS
+from settings import GRAVITY, friction, AIRDENSITY, DRAGCOEFFICIENT, MASS, BOUNCINESS
 import math
 class projectile():
     def __init__(self, x, y, rad):
@@ -25,7 +25,7 @@ class projectile():
         if  not self.onFloor and self.thrown:
             self.vel.y += GRAVITY * dt
         elif self.onFloor:
-            self.vel.y = -(self.vel.y * 0.5)
+            self.vel.y = -(self.vel.y * 0.75)
 
         self.vel += drag_accel * px * dt
 
@@ -45,10 +45,10 @@ class projectile():
         # print(int(self.vel.y / px))
         if self.pos.x < self.rad:
             self.pos.x = self.rad
-            self.vel.x = -(self.vel.x * 0.75)
+            self.vel.x = -(self.vel.x * BOUNCINESS)
         if self.pos.x > 1280 - self.rad:
             self.pos.x = 1280 - self.rad
-            self.vel.x = -(self.vel.x * 0.75)
+            self.vel.x = -(self.vel.x * BOUNCINESS)
 
     def draw(self, screen):
         if self.placed:
