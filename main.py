@@ -1,7 +1,7 @@
 import pygame
 from ball import projectile
 from settings import pixelsPerMetre as px
-from settings import GRAVITY, FLOOR
+from settings import FLOOR, FPS
 pygame.init()
 import math
 screen = pygame.display.set_mode((1280, 720))
@@ -22,8 +22,8 @@ def screenBlitzting(textAngle, textInitialVel, textCoords, textFPS, textToReset)
 retry = True
 running = True
 while running:
-    dt = clock.tick(60) / 1000
-    dt = min(dt, 1/60)
+    dt = clock.tick(FPS) / 1000
+    dt = min(dt, 1/FPS)
     fps = clock.get_fps()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
