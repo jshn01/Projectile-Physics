@@ -9,8 +9,9 @@ This is a Projectile Physics Simulator. It uses metres as a unit of measurement,
 # Features
 - Framerate dependent physics: the FPS is capped at 60 to ensure consistent physics in every hardware device.
 - Angle and velocity based launches: throw the projectile based on an initial velocity and at an angle from the North Line of the projectile.
-- Collision Landing: the ball collides with the floor and walls, meaning it loses energy each bounce, which can be tweaked in the settings.
-- Air Resistance: the ball now behaves adjusting to air resistance, where the mass of the ball, the air density and drag coefficient can be changed in settings to tune it.
+- Collision Landing: the projectile collides with the floor and walls, meaning it loses energy each bounce, which can be tweaked in the settings.
+- Air Resistance: the projectile now behaves adjusting to air resistance, where the mass of the ball, the air density and drag coefficient can be changed in settings to tune it.
+- Projectile bounciness: control the projectile bounciness (0-1) in settings, 1 meaning that it won't lose any energy. 
 # Requirements
 - python 3.x
 - pygame
