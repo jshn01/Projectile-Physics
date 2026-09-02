@@ -15,6 +15,5 @@ This is a Projectile Physics Simulator. It uses metres as a unit of measurement,
 # Requirements
 - python 3.x
 - pygame
-pip install pygame
 # Running
 Please run main.py to make the game function.
