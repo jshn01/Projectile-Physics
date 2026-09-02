@@ -18,4 +18,4 @@ This is a Projectile Physics Simulator. It uses metres as a unit of measurement,
 # Running
 Please run main.py to make the game function.
 # Showcase
-!(./assets/Showcase.gif)
+![test](/assets/Showcase.gif)
