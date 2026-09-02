@@ -5,10 +5,12 @@ This is a Projectile Physics Simulator. It uses metres as a unit of measurement,
 - Mousewheel is used to control the angle at which the projectile is thrown from the North Line of the projectile. 
 - Left Click is used to place the projectile. 
 - Right click is used to launch the projectile.
+- R to reset.
 # Features
 - Framerate dependent physics: the FPS is capped at 60 to ensure consistent physics in every hardware device.
 - Angle and velocity based launches: throw the projectile based on an initial velocity and at an angle from the North Line of the projectile.
 - Collision Landing: the ball collides with the floor and walls, meaning it loses energy each bounce, which can be tweaked in the settings.
+- Air Resistance: the ball now behaves adjusting to air resistance, where the mass of the ball, the air density and drag coefficient can be changed in settings to tune it.
 # Requirements
 - python 3.x
 - pygame
